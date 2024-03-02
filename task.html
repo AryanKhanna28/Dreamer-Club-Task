@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .profile-photo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section-heading {
+            font-size: 24px;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-list li {
+            margin-bottom: 10px;
+        }
+
+        .project-details p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .skills-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .youtube-video {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aryan Khanna Portfolio</h1>
+    </header>
+
+    <img class="profile-photo" src="photo.jpg" alt="Profile Photo" height="300">
+
+    <div class="container">
+        <section>
+            <h2 class="section-heading">Projects:</h2>
+            <ul class="project-list">
+                <li><a href="https://github.com/AryanKhanna28/TrafficSense-Visionary-Traffic-Control">Trafficsense Visionary Traffic Control</a></li>
+                <li><a href="https://github.com/AryanKhanna28/GuessNo">Guess The Random Number</a></li>
+                <li><a href="https://github.com/AryanKhanna28/e-commerce">E-commerce Application </a></li>
+            </ul>
+
+            <div class="project-details">
+                <h3>Project 1 Detail:</h3>
+                <p>Technical Stack : Deep Learning, PYQT, Python</p>
+                <ul>
+                    <li> Developed Real-time traffic simulation utilizing input from surveillance cameras to accurately count vehicles in four lanes.</li>
+                    <li>Implemented YOLOv8 to analyze the video feed and identify emergency vehicles enabling systems to prioritize lanes.</li>
+                    <li>Enhanced traffic management efficiency by integrating vehicle counting, lane prioritization resulting in reduced congestion.</li>    
+                </ul>
+        
+                <h3>Project 2 Detail:</h3>
+                <p>Technical Stack : HTML, CSS, JavaScript</p>
+                <ul>
+                    <li>Designed the workflow of a web gaming application that predicts a number in the range using input and low/high hints.</li>
+                    <li>Developed with HTML, CSS and JavaScript utilizing Document Object Model manipulation for display and interaction.</li>
+                    <li>Deployed the web application through the cloud based Vercel application for efficient hosting and continuous deployment.</li>    
+                </ul>
+
+                <h3>Project 3 Detail:</h3>
+                <p>Technical Stack : ReactJs, HTML, CSS, Firebase, AWS</p>
+                <ul>
+                    <li>Designed the modern website application,Integrating firebase for real-time database functionalities and user authentication.</li>
+                    <li>Utilized AWS services such as EC2 for scalable server infrastructure and S3 for static content hosting and deployment.</li>
+                    <li>Integrated search and Payment facility and used User Account and cart creation, with persistent states.</li>    
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email" class="form-label">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone" class="form-label">Phone No:</label>
+                <input class="form-input" type="text" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required>
+                
+                <label for="address" class="form-label">Address:</label>
+                <textarea class="form-input" id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+                
+                <label for="gender" class="form-label">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <label for="skills" class="form-label">Skills:</label>
+                <select class="form-input" id="skills" name="skills">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="reactjs">ReactJs</option>
+                </select>
+
+                <label class="form-label">Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+
+                <br><br>
+                <input class="form-submit" type="submit" value="Submit">
+                <input class="form-submit" type="reset" value="Reset">
+            </form>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Academic Overview</h2>
+            <table>
+                <tr>
+                    <th>Semester</th>
+                    <th>No. of Subjects</th>
+                    <th>CGPA</th>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>6</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>6</td>
+                    <td>9.05</td>
+                </tr> 
+                <tr>
+                    <td>3rd</td>
+                    <td>6</td>
+                    <td>6.2</td>
+                </tr> 
+                <tr>
+                    <td>4th</td>
+                    <td>6</td>
+                    <td>7.33</td>
+                </tr> 
+                <tr>
+                    <td>5th</td>
+                    <td>6</td>
+                    <td>7.5</td>
+                </tr> 
+                <tr>
+                    <td>6th</td>
+                    <td>6</td>
+                    <td>6.6</td>
+                </tr> 
+            </table>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Skills</h2>
+            <ul class="skills-list">
+                <li>Programming Languages
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>Web Technologies
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>ReactJs</li>
+                    </ul>
+                </li>
+                <li>CourseWork
+                    <ul>
+                        <li>Data Structures and Algorithms </li>
+                        <li>OOPs</li>
+                        <li>DBMS</li>
+                        <li>Computer Networking</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Exploring Youtube Video:</h2>
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/V52o-P33lzg?si=GbaUnzRgDr7A2pqT" width="600" height="400"></iframe>
+        </section>
+
+    </div>
+
+</body>
+</html>
